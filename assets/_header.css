@@ -1,0 +1,39 @@
+.header {
+    color: var(--cor-principal);
+    background: var(--cor-background);
+    font-size: var(--tipografia-principal);
+    box-shadow: var(--cor-sombra);
+
+    .header-nav--name h1 {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 1rem;
+        font-family: var(--tipografia-principal);
+        padding: 0 120px 0.8px 120px;
+    }
+
+    .header-nav--sinalizador {
+        width: 2rem;
+        height: 2rem;
+        border: 1px solid transparent;
+        color: #C17A47;
+        border-radius: 50%;
+    }
+
+    .header-nav--socialIcons {
+        width: 14px;
+        height: 14px;
+        color: var(--cor-principal);
+    }
+
+    .nav--socialIcons {
+        width: 14px;
+        height: 14px;
+        color: var(--cor-principal);
+    }
+
+    .nav--buttons {
+        border: none;
+        color:  var(--cor-principal);
+    }
+}
