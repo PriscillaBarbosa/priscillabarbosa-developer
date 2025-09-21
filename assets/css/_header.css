@@ -1,0 +1,76 @@
+.header {
+    color: var(--cor-principal);
+    background: var(--cor-background);
+    font-size: var(--tipografia-principal);
+    box-shadow: var(--cor-sombra);
+}
+
+.header-nav--name h1 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2rem;
+    font-family: "Ephesis", cursive;
+    font-weight: 400;
+    font-style: normal;
+    padding: 0;
+    white-space: nowrap; 
+}
+
+.header-nav-buttons {
+    flex-shrink: 1;
+    min-width: 0;
+}
+
+.nav--buttons {
+    border: none;
+    border-radius: 15px;
+    color: var(--cor-principal);
+    white-space: nowrap; 
+}
+
+.header-nav--socialIcons {
+    flex-shrink: 0; 
+}
+
+.nav--socialIcons {
+    width: 14px;
+    height: 14px;
+    color: var(--cor-principal);
+}
+
+.nav--socialIcons {
+    width: 14px;
+    height: 14px;
+    color: var(--cor-principal);
+    transition: all 0.25s ease;
+}
+
+.nav--socialIcons:hover,
+.btn-darkMode:hover {
+    color: var(--cor-secundaria);
+    transform: translateY(-2px) scale(1.2);
+    border: none;
+}
+
+.btn-darkMode {
+    color:var(--cor-principal);
+    min-width: auto; 
+    background-color: transparent;
+    border: none;
+}
+
+.nav--buttons {
+    border: none;
+    border-radius: 15px;
+    color: var(--cor-principal);
+    white-space: nowrap;
+    background: transparent;
+    transition: all 0.25s ease;
+}
+
+.nav--buttons:hover {
+    background: var(--cor-principal);
+    color: var(--cor-background);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
