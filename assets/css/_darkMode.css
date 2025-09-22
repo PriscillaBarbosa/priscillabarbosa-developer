@@ -1,0 +1,5 @@
+body.dark-mode {
+    --cor-principal: rgba(255, 255, 255, 0.90);
+    --cor-secundaria: #5f3415;
+    --cor-background: #171d17;
+}
