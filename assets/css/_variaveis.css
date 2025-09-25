@@ -10,6 +10,8 @@
 }
 
 [data-theme="dark"] {
-    --cor-principal: #c17a47;
-    --cor-terciaria: #2D4A2D;
+    --cor-principal: rgba(255, 255, 255, 0.90);
+    --cor-terciaria: #121612;
+    --cor-secundaria: #c17a47;
+    
 }
