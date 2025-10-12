@@ -1,0 +1,66 @@
+section .hero {
+    height: 40rem;
+}
+
+.hero-titulo {
+    color: var(--cor-principal);
+    padding-top: 8rem;
+    padding-left: 4rem;
+    font-size: 5rem;
+    font-weight: 500;
+}
+
+.hero-tituloFront {
+    color: var(--cor-secundaria);
+    font-weight: 500;
+    padding-left: 4rem;
+    font-size: 4.5rem;
+    flex-wrap: nowrap;
+}
+
+.hero-text {
+    font-size: 1.5em;
+    padding-left: 4rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.btn-portifolio {
+    border-radius: .5rem;
+    background: var(--cor-principal);
+    color: var(--cor-terciaria);
+    margin-left: 4rem;
+}
+
+.btn-cv {
+    border-radius: .5rem;
+    border: 1px solid var(--cor-principal);
+    background: var(--cor-terciaria);
+    color: var(--cor-principal);
+    margin-left: 4rem;
+}
+
+.hero-container-img {
+    width: 36rem;
+    height: 30rem;
+    border: 1px solid red;
+    margin-right: 2rem;
+}
+
+.circle1 {
+    width: 36rem;
+    height: 30rem;
+    border-radius: 50%;
+    border: 1px solid red;
+}
+
+.circle2 {
+    width: 25rem;
+    height: 20rem;
+    border-radius: 50%;
+    border: 1px solid red;
+}
+
+.img-hero {
+    width: 3rem;
+    height: 4rem;
+}

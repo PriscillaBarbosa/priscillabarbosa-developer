@@ -1,6 +1,7 @@
 
 @import url(_variaveis.css);
 @import url(_header.css);
+@import url(_hero.css);
 
 * {
     padding: 0;
@@ -11,5 +12,8 @@
 
 body {
     transition: background-color 0.3s ease, color 0.3s ease;
+    min-width: 100vh;
+    overflow-x: hidden;
 }
+
 
