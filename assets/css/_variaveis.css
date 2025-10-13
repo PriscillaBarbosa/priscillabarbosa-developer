@@ -4,14 +4,10 @@
     --cor-principal: #2D4A2D;
     --cor-secundaria: #c17a47;
     --cor-terciaria: rgba(255, 255, 255, 0.90);
-
-
-    
 }
 
 [data-theme="dark"] {
     --cor-principal: rgba(255, 255, 255, 0.90);
     --cor-terciaria: #121612;
     --cor-secundaria: #c17a47;
-    
 }
