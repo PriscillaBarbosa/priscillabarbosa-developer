@@ -8,7 +8,7 @@
 .header-nav--name h1 {
     font-style: normal;
     font-weight: 500;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 400;
     font-style: normal;
     padding: 0;
@@ -59,6 +59,7 @@
 }
 
 .nav--buttons {
+    font-size: .8rem;
     border: none;
     border-radius: 15px;
     color: var(--cor-principal);

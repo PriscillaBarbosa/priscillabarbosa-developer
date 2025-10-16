@@ -4,7 +4,7 @@ section .hero {
 
 .hero-titulo {
     color: var(--cor-principal);
-    padding-top: 8rem;
+    padding-top: 3.5rem;
     padding-left: 4rem;
     font-size: 4rem;
     font-weight: 400;
@@ -32,7 +32,7 @@ section .hero {
 }
 
 .hero-text {
-    font-size: 1.5em;
+    font-size: 1.5rem;
     padding-left: 4rem;
 }
 
@@ -66,37 +66,11 @@ section .hero {
     }
 }
 
-.hero-container-img {
-    position: relative;
-    width: 36rem;
-    height: 30rem;
-    border: 1px solid;
-    margin-right: 2rem;
-    border-color: var(--cor-secundaria)
+.hero-localizacao {
+    background: var(--cor-terciaria);
+    color: var(--cor-principal);
+    padding-left: 4rem;
+    font-size: .8rem;
+    margin-top: 5rem;
 }
 
-.background-img {
-    position: absolute;
-    width: 16rem;
-    height: 15.5rem;
-    border: 1 solid linear-gradient(135deg, var(180deg, --color-green-6030, rgba(143, 168, 139, 0.30)) 0%, var(--color-orange-5230, rgba(193, 122, 71, 0.158)) 100%);
-    background: linear-gradient(135deg, var(--color-green-6030, rgba(143, 168, 139, 0.30)) 50%, var(--color-orange-5230, rgba(193, 122, 71, 0.123)) 100%);
-    border-radius: 20px;
-    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
-    z-index: 3;
-}
-
-.img-hero {
-    position: absolute;
-    width: 15rem;
-    height: 18rem;
-    object-fit: cover;
-    z-index: 4;
-    top: 53%;
-    left: 50%;
-    transform:translate(-50%, -50%);
-}   
-
-img {
-  filter: saturate(0.8) brightness(1.1) contrast(0.9);
-}
