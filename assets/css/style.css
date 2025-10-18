@@ -11,6 +11,20 @@
     font-family: "Raleway", sans-serif;
 }
 
+.cormorant-garamond {
+  font-family: "Cormorant Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
 body {
     transition: background-color 0.3s ease, color 0.3s ease;
     min-width: 100vh;
