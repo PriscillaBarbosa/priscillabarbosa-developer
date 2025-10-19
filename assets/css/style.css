@@ -29,7 +29,7 @@ body {
   transition: background-color 0.3s ease, color 0.3s ease;
   min-width: 100vh;
   overflow-x: hidden;
-   background: var(--cor-terciaria);
+  background: var(--cor-terciaria);
 }
 
 main {

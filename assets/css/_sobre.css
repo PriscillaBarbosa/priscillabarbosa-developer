@@ -1,7 +1,122 @@
 .sobre {
-    height: 56.7rem;
+align-items: flex-start;
+gap: 5.1465rem;
+flex-shrink: 0;
 }
 
 .separador-sobre {
     margin-top: 4rem;
+}
+
+.sobre-title {
+    color: var(--cor-principal);
+    font-family: "Cormorant Garamond";
+    font-size: 3.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 3.75rem; /* 100% */
+    letter-spacing: -0.09375rem;
+}
+
+.sobre-vazia {
+    width: 16.666rem;
+    height: 30rem;
+    background: var(--cor-terciaria);
+}
+
+.sobre-content {
+    width: 37rem;
+}
+
+.sobre-destaque {
+    color: #0A0A0A;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.4375rem;
+}
+
+.sobre-texto {
+    color:  var(--cor-principal);
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.75rem; 
+    letter-spacing: 0.02188rem;
+}
+
+.sobre-infoDados {
+    border-top: 1px solid var(--cor-separador);
+    padding-top: 2.0625rem;
+    align-items: flex-start;
+    gap: 2rem;
+    align-self: stretch;
+}
+
+.sobre-dados {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    align-self: stretch;
+}
+
+.sobre-dados .numero {
+    color: var(--cor-principal);
+    font-family: "Cormorant Garamond", serif;
+    font-size: 2.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.5rem; 
+}
+
+.sobre-dados .texto {
+    color: var(--cor-principal);
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1rem;
+    letter-spacing: 0.0375rem;
+    text-transform: uppercase;
+}
+
+.sobre-especialidades {
+    padding-top: 2rem;
+}
+
+.especialidades {
+    padding-top: 2rem;
+    margin-bottom: 1rem;
+    color: var(--cor-principal);
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1rem; 
+    letter-spacing: 0.075rem;
+    text-transform: uppercase;
+}
+
+.card {
+    display: flex;
+    width:auto;
+    height: 2.125rem;
+    padding: 0.5rem 1rem;
+    align-items: flex-start;
+    flex-shrink: 0;
+    margin-left: 0.75rem;
+    margin-right: 0.75rem;
+}
+
+.card p {
+    color: var(--cor-principal);
+    font-family:  "Montserrat", sans-serif;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1rem; 
+    letter-spacing: 0.0375rem;
+    padding: 0.5rem 1rem;
 }
