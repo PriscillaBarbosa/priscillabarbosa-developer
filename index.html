@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -14,16 +17,17 @@
     <script type="module" src="./assets/js/scripts.js"></script>
     <title>Portifólio</title>
 </head>
-<body class="h-100">
-    <header class="header container-fluid">
+<body class="h-100 container-fluid p-0">
+    <header class="header w-100">
         <nav class="header-nav d-flex justify-content-between align-items-center">
             <div class="header-nav--name py-2">
                 <h1 class="mb-0">Priscilla Barbosa</h1>
             </div>
             <div class="header-nav-buttons d-flex align-items-center justify-content-center py-2">
-                <button class="px-2 py-1 mx-1 nav--buttons">Início</button>
                 <button class="px-2 py-1 mx-1 nav--buttons">Sobre</button>
-                <button class="px-2 py-1 mx-1 nav--buttons">Projetos</button>
+                <button class="px-2 py-1 mx-1 nav--buttons">Serviços</button>
+                <button class="px-2 py-1 mx-1 nav--buttons">Portifólio</button>
+                <button class="px-2 py-1 mx-1 nav--buttons">Processo</button>
                 <button class="px-2 py-1 mx-1 nav--buttons">Contato</button>
             </div>
             <div class="header-nav--socialIcons d-flex align-items-center gap-2">
@@ -33,46 +37,37 @@
                 <button class="px-2 py-1 mx-1 btn-darkMode" id="toggle-dark-mode">
                     <i class="fa-solid fa-moon" id="theme-icon" aria-hidden="true"></i>
                 </button>
+            </div>
         </nav>
     </header>
     <main>
-        <section class="hero">
-            <div class="row">
-                <div class="col-md-6 col-sm-12">
-                    <div class="hero-localizacao d-flex justify-content-start align-items-center mt-5">
-                        <i class="fa-solid fa-location-dot p-1"></i>
-                        Belo Horizonte - MG 
-                    </div>
-                    <h1 class="hero-titulo align-items-center justify-content-center pb-0">Desenvolvedora</h1>
-                    <p class="hero-tituloFront">Front-end</p>
-                    <p class="hero-text pb-2">Especialista em criar experiências digitais modernas e intuitivas que conectam pessoas e tecnologia.</p>
-                    <div class="d-flex">
-                        <button type="button" class="btn btn-portifolio"> Ver meus projetos <i class="fa-solid fa-arrow-right"></i></button>
-                        <button type="button" class="btn btn-cv"> Download CV <i class="fa-solid fa-download"></i></button>
-                    </div>
+        <section class="hero d-flex justify-content-between align-items-center">
+            <div class="d-flex flex-column">
+                <div class="separador mb-5"></div>
+                <div class="hero-destaque d-flex flex-column">
+                    <div class="hero-title"><p class="mb-0">CÓDIGO É</p></div>
+                    <div class="hero-title"><p>ARTE</p></div>
                 </div>
-                <div class="col-md-6 col-sm-12">
-                    <div class="hero-container-img my-2 d-flex justify-content-center align-items-center">
-                              
+                <p class="hero-chamada">Desenvolvedora front-end especializada em criar experiências digitais sofisticadas e atemporais.</p>
+                <p class="hero-text">Transformo conceitos em interfaces elegantes que unem design editorial e funcionalidade impecável.</p>
+                <div class="hero-links d-flex">
+                    <a href="#iniciar-projeto" class="link-iniciar">Iniciar Projeto</a>
+                    <a href="#ver-portifolio" class="link-portifolio">Ver Portifólio</a>
+                </div>
+            </div>
+            <div class="d-flex flex-column">
+                <div class="container d-flex flex-column justify-content-center align-items-end p-0">
+                    <div class="hero-image w-100 d-flex">
+                        <img src="./assets/img/Frame 2.png" alt="imagem-self" class="img-self">
                     </div>
                 </div>
             </div>
         </section>
-        <section class="habilidades">
-            <div class="container">
-                <div class="row">
-                    <h2 class="habilidades-titulo">Habilidades & Tecnologias</h2>
-                    <p class="habilidades-subtitulo">Principais tecnologias e ferramentas que utilizo no desenvolvimento de projetos</p>
-                    <div class="row">
-                        <div class="container-habilidades">
-                            <div class="col-md-3"></div>
-                            <div class="col-md-3"></div>
-                            <div class="col-md-3"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+       <section class="sobre">
+            <div class="separador-sobre"></div>
+            <p class="sobre-title">Sobre</p>
+        
+       </section>
     </main>
 </body>
 </html>

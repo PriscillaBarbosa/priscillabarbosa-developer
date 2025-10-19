@@ -1,14 +1,16 @@
 :root {
-    --tipografia-principal: "Noto Sans", sans-serif;
+    --tipografia-principal: "Cormorant Garamond", serif;
     --cor-sombra:  0 10px 15px -3px rgba(0, 0, 0, 0.10), 0 4px 6px -4px rgba(0, 0, 0, 0.10);
-    --cor-principal: #2D4A2D;
-    --cor-secundaria: #c17a47;
-    --cor-terciaria: rgba(255, 255, 255, 0.90);
+    --cor-principal: #171717;
+    --cor-secundaria: #717182;
+    --cor-separador: #D4756F;
+    --cor-terciaria: #ffffff;
     --cor-bg: linear-gradient(180deg, #ffffff, #d3bcac, #ffffff);
 }
 
 [data-theme="dark"] {
-    --cor-principal: rgba(255, 255, 255, 0.90);
-    --cor-terciaria: #121612;
-    --cor-secundaria: #c17a47;
+    --cor-principal:  #ffffff;
+    --cor-terciaria: #171717;
+    --cor-separador: #D4756F;
+    --cor-secundaria: #717182;
 }
