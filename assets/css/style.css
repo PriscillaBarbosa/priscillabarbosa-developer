@@ -3,7 +3,9 @@
 @import url(_header.css);
 @import url(_hero.css);
 @import url(_sobre.css);
+@import url(_servicos.css);
 @import url(_habilidades.css);
+@import url(_portifolio.css);
 
 * {
     padding: 0;
@@ -35,6 +37,16 @@ body {
 main {
   padding: 0 3rem;
 }
+
+.section-title {
+  color: var(--cor-principal);
+  font-family: "Cormorant Garamond", serif;
+  font-size: 3.75rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 3.75rem; /* 100% */
+  letter-spacing: -0.09375rem;
+} 
 
 
 

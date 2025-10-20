@@ -1,21 +1,12 @@
 .sobre {
-align-items: flex-start;
-gap: 5.1465rem;
-flex-shrink: 0;
+    align-items: flex-start;
+    gap: 5.1465rem;
+    flex-shrink: 0;
+    /*padding-bottom: 2rem;*/
 }
 
 .separador-sobre {
     margin-top: 4rem;
-}
-
-.sobre-title {
-    color: var(--cor-principal);
-    font-family: "Cormorant Garamond";
-    font-size: 3.75rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 3.75rem; /* 100% */
-    letter-spacing: -0.09375rem;
 }
 
 .sobre-vazia {
@@ -29,7 +20,7 @@ flex-shrink: 0;
 }
 
 .sobre-destaque {
-    color: #0A0A0A;
+    color: var(--cor-principal);
     font-family: "Cormorant Garamond", serif;
     font-size: 1.5rem;
     font-style: normal;
@@ -82,10 +73,6 @@ flex-shrink: 0;
     text-transform: uppercase;
 }
 
-.sobre-especialidades {
-    padding-top: 2rem;
-}
-
 .especialidades {
     padding-top: 2rem;
     margin-bottom: 1rem;
@@ -108,6 +95,9 @@ flex-shrink: 0;
     flex-shrink: 0;
     margin-left: 0.75rem;
     margin-right: 0.75rem;
+    background: var(--cor-terciaria);
+    color: var(--cor-terciaria);
+    border: 1px solid var(--cor-separador);
 }
 
 .card p {

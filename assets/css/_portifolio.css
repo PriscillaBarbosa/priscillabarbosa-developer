@@ -1,0 +1,130 @@
+.portifolio {
+    display: flex;
+    width: 65.25rem;
+    height: 112.37206rem;
+    /*padding-top: 4rem;*/
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5rem;
+    flex-shrink: 0;
+}
+
+.ver-todos {
+    text-decoration: none;
+    color: var(--cor-principal);
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1rem; 
+    letter-spacing: 0.075rem;
+    text-transform: uppercase;
+}
+
+.portifolio-principais {
+    display: flex;
+    padding-right: 0.001rem;
+    justify-content: start;
+    align-items: center;
+    gap: 3rem;
+    align-self: stretch;
+}
+
+.projeto-1 {
+    display: flex;
+    padding-right: 0.001rem;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    align-self: stretch;
+    padding-top: 3rem;
+}
+
+.img {
+    width: 32.583rem;
+    height: 24.4365rem;
+    flex-shrink: 0;
+}
+
+.textos {
+    width: 22.416rem;
+    height: 15.46875rem;
+}
+
+.texto-tag {
+    color: var(--cor-principal);
+    font-family: Montserrat;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1rem; 
+    letter-spacing: 0.075rem;
+    text-transform: uppercase;
+    opacity: 0.6;
+}
+
+.texto-titulo {
+    color: var(--cor-principal);
+    font-family: "Cormorant Garamond", serif;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 3rem; /* 100% */
+    letter-spacing: -0.075rem;
+    padding-top: .5rem;
+}
+
+.texto-frase {
+    color: var(--cor-principal);
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.42188rem; /* 162.5% */
+    letter-spacing: 0.02188rem;
+    width: 19.5rem;
+    padding-top: 1.5rem;
+}
+
+.container-tecs {
+    display: inline-flex;
+    padding: 0.5rem 7.37894rem 0 0;
+    align-items: flex-start;
+    gap: 0.5rem;
+    margin-top: 2rem;
+}
+
+.container-tecs div .tec {
+    display: flex;
+    padding: .5rem 1rem;
+    align-items: flex-start;
+    border: 1px solid var(--cor-separador);
+    background: #FFF;
+    color: #0A0A0A;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1rem;
+    letter-spacing: 0.0375rem;
+    border-radius: .5rem;
+}
+
+.tec-ver {
+    display: inline-flex;
+    height: 1rem;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0.57425rem;
+    flex-shrink: 0;
+    padding-top: 1.8rem;
+    text-decoration: none;
+    color: #0A0A0A;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1rem; 
+    letter-spacing: 0.075rem;
+    text-transform: uppercase;
+}
