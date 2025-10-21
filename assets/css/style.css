@@ -6,6 +6,7 @@
 @import url(_servicos.css);
 @import url(_habilidades.css);
 @import url(_portifolio.css);
+@import url(_processo.css);
 
 * {
     padding: 0;

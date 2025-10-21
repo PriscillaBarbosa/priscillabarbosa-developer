@@ -1,7 +1,7 @@
 .portifolio {
     display: flex;
     width: 65.25rem;
-    height: 112.37206rem;
+    /*height: 112.37206rem;*/
     /*padding-top: 4rem;*/
     flex-direction: column;
     align-items: flex-start;
