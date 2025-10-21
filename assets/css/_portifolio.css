@@ -5,7 +5,7 @@
     /*padding-top: 4rem;*/
     flex-direction: column;
     align-items: flex-start;
-    gap: 5rem;
+    gap: 3rem;
     flex-shrink: 0;
 }
 
@@ -30,14 +30,17 @@
     align-self: stretch;
 }
 
-.projeto-1 {
+.projeto-1,
+.projeto-2,
+.projeto-3 {
     display: flex;
     padding-right: 0.001rem;
     justify-content: center;
     align-items: center;
-    gap: 3rem;
+    gap: 6rem;
     align-self: stretch;
-    padding-top: 3rem;
+    /*padding-top: 3rem;
+    margin-bottom: 3rem; */
 }
 
 .img {

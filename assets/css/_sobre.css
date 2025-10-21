@@ -74,8 +74,8 @@
 }
 
 .especialidades {
-    padding-top: 2rem;
-    margin-bottom: 1rem;
+    padding-top: 3rem;
+    padding-bottom:1rem;
     color: var(--cor-principal);
     font-family: "Montserrat", sans-serif;
     font-size: 0.75rem;
@@ -93,7 +93,7 @@
     padding: 0.5rem 1rem;
     align-items: flex-start;
     flex-shrink: 0;
-    margin-left: 0.75rem;
+    /*margin-left: 0.75rem;*/
     margin-right: 0.75rem;
     background: var(--cor-terciaria);
     color: var(--cor-terciaria);

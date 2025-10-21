@@ -2,7 +2,7 @@
     color: var(--cor-principal);
     background: var(--cor-terciaria);
     font-size: var(--tipografia-principal);
-    padding: 2.5rem 3rem;
+    padding: 3.5rem 6rem;
 }
 
 .header-nav--name h1 {
