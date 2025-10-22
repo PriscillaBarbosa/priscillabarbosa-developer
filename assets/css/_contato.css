@@ -1,0 +1,83 @@
+.contato {
+    display: inline-flex;
+    height: 41.29688rem;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 6rem;
+    flex-shrink: 0;
+}
+
+.contato-chamada {
+    display: flex;
+    height: 17.54688rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1.5rem;
+    align-self: stretch;
+}
+
+.contato-titulo {
+    color: var(--cor-principal);
+    font-family: "Cormorant Garamond", serif;
+    font-size: 4.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 4.5rem; /* 100% */
+    letter-spacing: -0.1125rem;
+}
+
+.contato-texto {
+    color: var(--cor-principal);
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.82813rem; /* 162.5% */
+}
+
+.contato-email-titulo,
+.contato-local-titulo, 
+.contato-disponibilidade-titulo {
+    color: var(--cor-principal);
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1rem; /* 133.333% */
+    letter-spacing: 0.075rem;
+    text-transform: uppercase;
+    flex: 1 0 0;
+}
+
+.contato-email {
+    color: var(--cor-principal);
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.25rem; /* 142.857% */
+}
+
+.form {
+    width: 36rem;
+    height: 26.75rem;
+}
+
+.botao-enviar {
+    color: var(--cor-terciaria);
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1rem; /* 133.333% */
+    letter-spacing: 0.0375rem;
+    text-transform: uppercase;
+    display: flex;
+    width: 12.29588rem;
+    height: 3rem;
+    padding: 1rem 2rem;
+    align-items: flex-start;
+    flex-shrink: 0;
+    background: var(--cor-principal);
+}
