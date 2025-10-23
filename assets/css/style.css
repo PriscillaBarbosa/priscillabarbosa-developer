@@ -8,6 +8,7 @@
 @import url(_portifolio.css);
 @import url(_processo.css);
 @import url(_contato.css);
+@import url(_footer.css);
 
 * {
     padding: 0;

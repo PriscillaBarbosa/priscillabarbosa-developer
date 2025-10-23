@@ -3,8 +3,11 @@
     height: 41.29688rem;
     justify-content: flex-end;
     align-items: flex-start;
-    gap: 6rem;
     flex-shrink: 0;
+}
+
+.contato .content {
+    gap: 6rem;
 }
 
 .contato-chamada {
@@ -30,10 +33,12 @@
 .contato-texto {
     color: var(--cor-principal);
     font-family: "Montserrat", sans-serif;
-    font-size: 1.125rem;
+    font-size: 1rem;
     font-style: normal;
     font-weight: 400;
     line-height: 1.82813rem; /* 162.5% */
+    margin-top: 1.5rem;
+    margin-bottom: 3rem;
 }
 
 .contato-email-titulo,
@@ -60,6 +65,7 @@
 }
 
 .form {
+    margin-top: 5rem;
     width: 36rem;
     height: 26.75rem;
 }
