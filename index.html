@@ -15,54 +15,54 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
     <script type="module" src="assets/js/scripts.js"></script>
-    <title>Portifólio</title>
+    <title>Priscilla Barbosa | Front-end Developer</title>
 </head>
-<body class="h-100 container-fluid p-0">
-    <header class="header w-100">
-        <nav class="header-nav d-flex justify-content-between align-items-center">
-            <div class="header-nav--name py-2">
-                <h1 class="mb-0">Priscilla Barbosa</h1>
-            </div>
-            <div class="header-nav-buttons d-flex align-items-center justify-content-center py-2">
-                <button class="px-2 py-1 mx-1 nav--buttons">Sobre</button>
-                <button class="px-2 py-1 mx-1 nav--buttons">Serviços</button>
-                <button class="px-2 py-1 mx-1 nav--buttons">Portifólio</button>
-                <button class="px-2 py-1 mx-1 nav--buttons">Processo</button>
-                <button class="px-2 py-1 mx-1 nav--buttons">Contato</button>
-            </div>
-            <div class="header-nav--socialIcons d-flex align-items-center gap-2">
-                <a href="#" class="px-1"><i class="fa-brands fa-github nav--socialIcons"></i></a>
-                <a href="#" class="px-1"><i class="fa-brands fa-linkedin-in nav--socialIcons"></i></a>
-                <a href="#" class="px-1"><i class="fa fa-envelope nav--socialIcons"></i></a>
-                <button class="px-2 py-1 mx-1 btn-darkMode" id="toggle-dark-mode">
-                    <i class="fa-solid fa-moon" id="theme-icon" aria-hidden="true"></i>
-                </button>
-            </div>
-        </nav>
-    </header>
-    <main>
-        <section class="hero d-flex justify-content-between align-items-top">
-            <div class="d-flex flex-column">
-                <div class="separador mb-5"></div>
-                <div class="hero-destaque d-flex flex-column">
-                    <div class="hero-title"><p class="mb-0">CÓDIGO É</p></div>
-                    <div class="hero-title"><p>ARTE</p></div>
-                </div>
-                <p class="hero-chamada">Desenvolvedora front-end especializada em criar experiências digitais sofisticadas e atemporais.</p>
-                <p class="hero-text">Transformo conceitos em interfaces elegantes que unem design editorial e funcionalidade impecável.</p>
-                <div class="hero-links d-flex">
-                    <a href="#iniciar-projeto" class="link-iniciar">Iniciar Projeto</a>
-                    <a href="#ver-portifolio" class="link-portifolio">Ver Portifólio</a>
-                </div>
-            </div>
-            <div class="d-flex flex-column">
-                <div class="container d-flex flex-column justify-content-center align-items-end p-0">
-                    <div class="hero-image w-100 d-flex">
-                        <img src="./assets/img/Frame 2.png" alt="imagem-self" class="img-self">
+<body class="h-100 container-fluid p-0 m-0">
+    <header class="header">
+        <div class="row">
+            <div class="col-12">
+                <div class="header-content d-flex justify-content-between align-items-center">
+                    <h1 class="d-flex header-nav--name justify-content-center align-items-center mb-0">Priscilla Barbosa</h1>
+                    <nav class="d-flex justify-content-between align-items-center">
+                        <div class="header-nav-buttons d-flex align-items-center justify-content-center py-2">
+                            <button class="px-2 py-1 mx-1 nav--buttons">Sobre</button>
+                            <button class="px-2 py-1 mx-1 nav--buttons">Serviços</button>
+                            <button class="px-2 py-1 mx-1 nav--buttons">Portifólio</button>
+                            <button class="px-2 py-1 mx-1 nav--buttons">Processo</button>
+                            <button class="px-2 py-1 mx-1 nav--buttons">Contato</button>
+                        </div>
+                    </nav>
+                    <div class="header-nav--socialIcons d-flex align-items-center gap-1">
+                        <a href="#" class="px-1"><i class="fa-brands fa-github nav--socialIcons"></i></a>
+                        <a href="#" class="px-1"><i class="fa-brands fa-linkedin-in nav--socialIcons"></i></a>
+                        <a href="#" class="px-1"><i class="fa fa-envelope nav--socialIcons"></i></a>
+                        <button class="px-2 py-1 ml-1 btn-darkMode" id="toggle-dark-mode">
+                            <i class="fa-solid fa-moon" id="theme-icon" aria-hidden="true"></i>
+                        </button>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </header> 
+    <section class="hero">
+        <div class="row">
+            <div class="col-8">
+                <div class="hero-content-text d-flex flex-column mt-5">
+                    <div class="separador mb-3"></div>
+                    <div class="hero-destaque hero-title d-flex justify-content-start"><p class="mb-0">CÓDIGO</p></div>
+                    <div class="hero-title2 d-flex justify-content-end"><p>É ARTE</p></div>
+                    <p class="hero-chamada mb-0">Desenvolvedora front-end especializada em criar experiências digitais sofisticadas e atemporais.</p>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="hero-image w-100 d-flex mt-5 justify-content-end align-items-center">
+                    <img src="./assets/img/Developer.png" alt="imagem-self" class="img-self">
+                </div>
+            </div>
+        </div>
+    </section>  
+    <main>
+        
        <section class="sobre d-flex justify-content-between align-items-center">
             <div class="d-flex flex-column justify-content-center w-100">
                 <div class="separador-sobre mb-5"></div>
@@ -382,6 +382,16 @@
                 <a href="" class="navegacao-link">Portifólio</a>
                 <a href="" class="navegacao-link">Processo</a>
                 <a href="" class="navegacao-link">Contato</a>
+            </div>
+            <div class="newslettter-footer">
+                <p class="footer-texto">Insights sobre desenvolvimento e design diretamente no seu email</p>
+                <div class="d-flex">
+                    <label for="staticEmail2" class="visually-hidden">Email</label>
+                    <input type="text" readonly class="form-control-plaintext" id="staticEmail2" value="email@example.com">
+                </div>
+                <div class="">
+                    <button type="submit" class="btn btn-primary mb-3">Assinar</button>
+                </div>
             </div>
         </div>
        </section>
