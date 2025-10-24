@@ -2,10 +2,27 @@
     color: var(--cor-principal);
     background: var(--cor-terciaria);
     font-size: var(--tipografia-principal);
-    padding: 3.5rem 6rem;
+    padding: 1.5rem 3rem;
+    max-width: 100%;
 }
 
-.header-nav--name h1 {
+@media (max-width:425px) {
+    .header-content {
+        padding: 2rem 1rem;
+        flex-direction: column;
+        
+    }
+}
+
+@media (min-width: 1500px) {
+    .header,
+    .hero {
+        padding: 2rem 12rem;
+    }
+    
+}
+
+.header-nav--name {
     font-style: normal;
     font-weight: 500;
     font-size: 1.25rem;
@@ -31,6 +48,8 @@
     white-space: nowrap; 
     text-transform: uppercase;
     font-family: "Montserrat", sans-serif;
+    -webkit-box-shadow: 1px 2px 17px -9px rgba(113,113,130,0.86); 
+    box-shadow: 1px 2px 17px -9px rgba(113,113,130,0.86);
 }
 
 .header-nav--socialIcons {
@@ -62,6 +81,7 @@
     min-width: auto; 
     background-color: transparent;
     border: none;
+    border-radius: 10px;
 }
 
 .nav--buttons {
