@@ -1,12 +1,23 @@
+/* ==============================================
+   CSS SECTION PORTIFÓLIO
+   ============================================== */
+
 .portifolio {
     display: flex;
-    width: 65.25rem;
-    /*height: 112.37206rem;*/
-    /*padding-top: 4rem;*/
     flex-direction: column;
     align-items: flex-start;
     gap: 3rem;
     flex-shrink: 0;
+    padding-top: 2rem; /* Adicionado para espaçamento */
+    padding-bottom: 2rem;
+}
+
+@media (min-width:1500px) {
+    .portifolio .container {
+        /* AJUSTE: O padding deve ser no container interno */
+        padding-left: 12rem;
+        padding-right: 12rem;
+    }
 }
 
 .ver-todos {
@@ -23,36 +34,27 @@
 
 .portifolio-principais {
     display: flex;
-    padding-right: 0.001rem;
+    flex-direction: column; /* AJUSTE: Mudei para coluna, pois os .row já cuidam do layout lateral */
     justify-content: start;
     align-items: center;
     gap: 3rem;
     align-self: stretch;
 }
 
-.projeto-1,
-.projeto-2,
-.projeto-3 {
-    display: flex;
-    padding-right: 0.001rem;
-    justify-content: center;
-    align-items: center;
-    gap: 6rem;
-    align-self: stretch;
-    /*padding-top: 3rem;
-    margin-bottom: 3rem; */
-}
+/* REMOVIDO: As regras de .projeto-1, .projeto-2, .projeto-3
+   foram removidas. O layout agora é controlado por
+   <div class="row"> e <div class="col-md-*"> no HTML.
+*/
 
-.img {
-    width: 32.583rem;
-    height: 24.4365rem;
-    flex-shrink: 0;
-}
+/* REMOVIDO: A regra .img com width e height fixos
+   foi removida. A classe .img-fluid no HTML
+   cuida da responsividade da imagem.
+*/
 
-.textos {
-    width: 22.416rem;
-    height: 15.46875rem;
-}
+/* REMOVIDO: A regra .textos com width e height fixos
+   foi removida. A coluna .col-md-5 no HTML
+   controla a largura.
+*/
 
 .texto-tag {
     color: var(--cor-principal);
@@ -72,7 +74,7 @@
     font-size: 3rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 3rem; /* 100% */
+    line-height: 3rem; 
     letter-spacing: -0.075rem;
     padding-top: .5rem;
 }
@@ -83,21 +85,22 @@
     font-size: 0.875rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 1.42188rem; /* 162.5% */
+    line-height: 1.42188rem; 
     letter-spacing: 0.02188rem;
-    /*width: 19.5rem;*/
     padding-top: 1.5rem;
 }
 
 .container-tecs {
     display: inline-flex;
-    padding: 0.5rem 7.37894rem 0 0;
+    /* REMOVIDO: padding-right: 7.37894rem; (era fixo) */
     align-items: flex-start;
     gap: 0.5rem;
     margin-top: 2rem;
+    flex-wrap: wrap; /* Adicionado para quebrar em telas pequenas */
 }
 
-.container-tecs div .tec {
+/* AJUSTE: Seletor simplificado */
+.container-tecs .tec {
     display: flex;
     padding: .5rem 1rem;
     align-items: flex-start;
@@ -111,6 +114,7 @@
     line-height: 1rem;
     letter-spacing: 0.0375rem;
     border-radius: .5rem;
+    margin-bottom: 0.5rem; /* Adicionado para espaçamento no wrap */
 }
 
 .tec-ver {

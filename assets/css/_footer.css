@@ -1,19 +1,25 @@
+/* ==============================================
+   CSS FOOTER
+   ============================================== */
+
 .footer {
     border-top: 1px solid rgba(0, 0, 0, 0.10);
     display: flex;
-    width: 65.25rem;
-    height: 24.375rem;
-    padding: 4.0625rem 3.625rem 0 3.625rem;
+    /* REMOVIDO: width: 65.25rem; */
+    /* REMOVIDO: height: 24.375rem; */
+    
+    /* AJUSTADO: O padding lateral foi removido (0)
+       pois o .container interno já cuida disso.
+    */
+    padding: 4.0625rem 0;
     align-items: flex-start;
     flex-shrink: 0;
+    max-width: 100%; /* Garante que não estoure */
 }
 
-.container-footer {
-    display: flex;
-    height: 10.25rem;
-    align-items: flex-start;
-    gap: 1rem;
-}
+/* REMOVIDO: .container-footer foi removido.
+   O layout é controlado por <div class="row">.
+*/
 
 .footer-titulo {
     color: var(--cor-principal);
@@ -21,8 +27,14 @@
     font-size: 1.5rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 2rem; /* 133.333% */
+    line-height: 2rem; 
     letter-spacing: 0.075rem;
+}
+
+.footer-texto {
+    color: var(--cor-principal);
+    font-family: "Montserrat", sans-serif;
+    max-width: 350px; /* Adicionado para controlar o fluxo do texto */
 }
 
 .navegacao-footer p {
@@ -31,7 +43,7 @@
     font-size: 0.75rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 1rem; /* 133.333% */
+    line-height: 1rem; 
     letter-spacing: 0.075rem;
     text-transform: uppercase;
 }
@@ -42,7 +54,8 @@
     font-size: 0.875rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 1.25rem; /* 142.857% */
+    line-height: 1.25rem;
+    text-decoration: none;
 }
 
 .newsletter-footer {
@@ -51,7 +64,7 @@
     font-size: 0.75rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 1rem; /* 133.333% */
+    line-height: 1rem; 
     letter-spacing: 0.075rem;
     text-transform: uppercase;
 }
@@ -62,6 +75,6 @@
     font-size: 0.75rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 1.21875rem; /* 162.5% */
+    line-height: 1.21875rem; 
     letter-spacing: 0.01875rem;
 }

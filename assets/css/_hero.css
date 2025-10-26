@@ -1,11 +1,19 @@
+/* ==============================================
+   CSS DO HERO
+   ============================================== */
+
 .hero {
-    padding: 0 3rem;
+    /* REMOVIDO: padding: 0 3rem; 
+       O 'container' dentro da section agora controla o padding.
+    */
     max-width: 100%;
 }
 
 @media (min-width: 1500px) {
-    .hero {
-        padding: 0 12rem;
+    .hero .container {
+         /* AJUSTADO: O padding foi movido para a regra
+           de 1500px na seção HEADER para evitar repetição.
+        */
     }
 }
 
@@ -38,7 +46,7 @@
     letter-spacing: .08rem;
     text-align: center;
     animation: tracking-in-contract 7s forwards;
-   
+    
 }
 
 .hero-chamada {
@@ -50,62 +58,12 @@
     line-height: 1.85rem;
     letter-spacing: 0.03rem;
     margin-bottom: 1.5rem;
-     
 }
 
-.hero-text {
-    width: 90%;
-    color: var(--cor-principal);
-    font-family: "Montserrat", sans-serif;
-    font-size: 0.875rem;
-    font-style: normal;
-    font-weight: 300;
-    line-height: 1.43rem;
-    letter-spacing: 0.022rem;
-    margin-bottom: 3rem;
-}
+/* REMOVIDO: A regra global '.container { gap: 5.5rem; }'
+   foi removida pois quebrava o grid do Bootstrap.
+*/
 
-.hero-links {
-    padding-top: 1.5rem;
-    height: 4.125rem;
-    padding-top: 1rem;
-    align-items: flex-start;
-    gap: 1.5rem;
-    align-self: stretch;
-}
-
-.link-iniciar,
-.link-portifolio {
-    width: 11.5rem;
-    height: 3.125rem;
-    padding: 1rem 2rem;
-    align-items: flex-start;
-    text-transform: uppercase;
-    text-decoration:none;
-    font-family: "Montserrat", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 0.75rem;
-    line-height: 1rem;
-    letter-spacing: 0.04rem;
-    text-transform: uppercase;
-}
-
-.link-iniciar {
-    background: var(--cor-principal);
-    color: var(--cor-terciaria);
-}
-
-.link-portifolio {
-    color: var(--cor-principal);
-    background: var(--cor-terciaria);
-    border: 1px solid var(--cor-principal);
-}
-
-.container {
-    gap: 5.5rem;
-}
- 
 @keyframes tracking-in-contract {
   0% {
     letter-spacing: 1em;
@@ -119,4 +77,3 @@
     opacity: 1;
   }
 }
-

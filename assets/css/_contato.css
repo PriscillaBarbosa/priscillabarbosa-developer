@@ -1,18 +1,32 @@
+/* ==============================================
+   CSS SECTION CONTATO
+   ============================================== */
+
 .contato {
-    display: inline-flex;
-    height: 41.29688rem;
-    justify-content: flex-end;
-    align-items: flex-start;
+    /* REMOVIDO: 'display: inline-flex', 'height', 'justify-content', etc. */
+    /* A <section> agora é um bloco padrão e o grid cuida do layout. */
+    padding-top: 2rem;
+    padding-bottom: 4rem;
     flex-shrink: 0;
+    max-width: 100%; /* Adicionado para segurança */
 }
 
-.contato .content {
-    gap: 6rem;
+@media(min-width: 1500px) {
+    .contato .container {
+        /* AJUSTE: Aplicando o padding ao .container interno */
+        padding-left: 12rem;
+        padding-right: 12rem;
+    }
 }
+
+/* REMOVIDO: .contato .content 
+   O espaçamento agora é controlado pelo 'g-5' (gutter)
+   na classe <div class="row g-5"> do seu HTML.
+*/
 
 .contato-chamada {
     display: flex;
-    height: 17.54688rem;
+    /* REMOVIDO: height: 17.54688rem; (Altura fixa) */
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
@@ -52,10 +66,12 @@
     line-height: 1rem; /* 133.333% */
     letter-spacing: 0.075rem;
     text-transform: uppercase;
-    flex: 1 0 0;
+    /* REMOVIDO: flex: 1 0 0; (Não é mais necessário) */
 }
 
-.contato-email {
+.contato-email,
+.contato-local,
+.contato-disponibilidade {
     color: var(--cor-principal);
     font-family: "Montserrat", sans-serif;
     font-size: 0.875rem;
@@ -65,9 +81,17 @@
 }
 
 .form {
-    margin-top: 5rem;
-    width: 36rem;
-    height: 26.75rem;
+    /* AJUSTE: Margem mobile-first */
+    margin-top: 2rem; 
+    
+    /* REMOVIDO: width: 36rem; (O .col-md-7 cuida da largura) */
+    /* REMOVIDO: height: 26.75rem; (A altura deve ser automática) */
+}
+
+@media (min-width: 768px) { /* md breakpoint */
+    .form {
+        margin-top: 5rem; /* Restaura sua margem original para telas maiores */
+    }
 }
 
 .botao-enviar {
@@ -83,7 +107,15 @@
     width: 12.29588rem;
     height: 3rem;
     padding: 1rem 2rem;
-    align-items: flex-start;
+    align-items: center; /* AJUSTE: 'center' para verticalizar */
+    justify-content: center; /* Adicionado para centralizar o texto */
     flex-shrink: 0;
     background: var(--cor-principal);
+    border: none; /* Adicionado para garantir */
+}
+
+/* Adicionando um :hover para o botão */
+.botao-enviar:hover {
+    opacity: 0.9;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }

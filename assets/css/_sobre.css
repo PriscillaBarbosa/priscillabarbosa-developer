@@ -1,7 +1,13 @@
+/* ==============================================
+   CSS SECTION SOBRE
+   ============================================== */
+
 .sobre {
     align-items: flex-start;
     flex-shrink: 0;
     max-width: 100%;
+    padding-top: 2rem; /* Adicionado um padding para espaçamento */
+    padding-bottom: 2rem;
 }
 
 @media (min-width: 1500px) {
@@ -11,15 +17,19 @@
     }
 }
 
-.container {
-    background-size: cover;
-}
+/* REMOVIDO: A regra global '.container { background-size: cover; }'
+   foi removida pois quebrava o layout.
+*/
 
 .separador-sobre {
     margin-top: 4rem;
 }
 
 .img-self {
+    /* AJUSTADO: 'max-width: 100%' e 'width: 100%'
+       são redundantes com a classe 'img-fluid'
+       usada no HTML, mas não causam mal.
+    */
     max-width: 100%;
     height: auto;
     width: 100%;
@@ -60,9 +70,13 @@
 .sobre-infoDados {
     border-top: 1px solid var(--cor-separador);
     padding-top: 2.0625rem;
-    align-items: flex-start;
     gap: 2rem;
     align-self: stretch;
+    /* AJUSTADO: flex-wrap e justify-content-center
+       foram adicionados no HTML, mas é bom garantir aqui.
+    */
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .sobre-dados {
@@ -70,6 +84,7 @@
     justify-content: center;
     align-items: flex-start;
     align-self: stretch;
+    text-align: center; /* Garante alinhamento no mobile */
 }
 
 .sobre-dados .numero {
@@ -110,7 +125,8 @@
     width:auto;
     height: 2.125rem;
     padding: 0.5rem 1rem;
-    align-items: flex-start;
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
     flex-shrink: 0;
     margin-right: 0.75rem;
     background: var(--cor-terciaria);
@@ -129,5 +145,7 @@
     font-weight: 400;
     line-height: 1rem; 
     letter-spacing: 0.0375rem;
-    padding: 0.5rem 1rem;
+    /* REMOVIDO: padding: 0.5rem 1rem; 
+       O padding já está no .card pai, removido para evitar duplicidade.
+    */
 }

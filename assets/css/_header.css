@@ -1,30 +1,34 @@
-.header {
+/* ==============================================
+   CSS DO HEADER
+   ============================================== */
+
+/* AJUSTE: As propriedades do .header (background, cor)
+   agora estão aplicadas à .navbar dentro dele,
+   para que o componente do Bootstrap receba o estilo.
+*/
+.header .navbar {
     color: var(--cor-principal);
     background: var(--cor-terciaria);
     font-size: var(--tipografia-principal);
-    padding: 1.5rem 3rem;
-    max-width: 100%;
+    padding: 1.5rem 3rem; /* Seu padding original */
 }
 
-@media (max-width:425px) {
-    .header {
-        padding: 2rem 1rem;
-        flex-direction: column;
-        align-items: center; 
-        justify-content: center;
-        gap: 1.5rem;
-    }
-}
+/* REMOVIDO: O media query para (max-width: 425px) foi removido.
+   O componente 'navbar-expand-lg' já cuida do "menu hambúrguer"
+   de forma automática e mais eficiente.
+*/
 
 @media (min-width: 1500px) {
-    .header,
-    .hero {
-        padding: 2rem 12rem;
+    /* AJUSTE: Aplicando o padding ao container interno */
+    .header .navbar .container-fluid,
+    .hero .container {
+        padding-left: 12rem;
+        padding-right: 12rem;
     }
-    
 }
 
-.header-nav--name {
+/* AJUSTE: O seletor agora mira na classe do Bootstrap */
+.header .navbar-brand.header-nav--name {
     font-style: normal;
     font-weight: 500;
     font-size: 1.25rem;
@@ -38,30 +42,76 @@
     text-transform: uppercase;
 }
 
-.header-nav-buttons {
-    flex-shrink: 1;
-    min-width: 0;
-}
+/* REMOVIDO: .header-nav-buttons foi substituído por .navbar-nav
+   Os estilos de .nav--buttons foram movidos para o seletor abaixo.
+*/
 
-.nav--buttons {
+/* AJUSTE: Seletor modificado para estilizar os links (<a>)
+   dentro do novo componente <ul class="navbar-nav">.
+*/
+.navbar .nav-link.nav--buttons {
+    font-size: .8rem;
     border: none;
     border-radius: 15px;
     color: var(--cor-principal);
-    white-space: nowrap; 
+    white-space: nowrap;
+    background: transparent;
+    transition: all 0.25s ease;
     text-transform: uppercase;
     font-family: "Montserrat", sans-serif;
-    -webkit-box-shadow: 1px 2px 17px -9px rgba(113,113,130,0.86); 
-    box-shadow: 1px 2px 17px -9px rgba(113,113,130,0.86);
+    padding: 0.5rem 1rem; /* Mantido do seu .nav--buttons original */
 }
+
+.navbar .nav-link.nav--buttons:hover {
+    background: var(--cor-secundaria);
+    color: var(--cor-terciaria);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* --- NOVOS ESTILOS (necessários para a Navbar) --- */
+
+/* Centraliza os links de navegação */
+.navbar-nav {
+    margin: auto;
+}
+
+/* Garante que o menu colapsado ocupe a tela e tenha o fundo correto */
+.navbar-collapse {
+    background-color: var(--cor-terciaria);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+@media (min-width: 992px) { /* 992px é o breakpoint do -lg */
+    .navbar-collapse {
+        background-color: transparent;
+        padding: 0;
+        margin-top: 0;
+    }
+}
+
+/* Estiliza o ícone do "hambúrguer" para combinar com seu tema */
+.navbar-toggler {
+    border-color: rgba(0, 0, 0, 0.1);
+}
+
+.navbar-toggler-icon {
+    /* Este SVG "puxa" a cor principal da sua fonte (var(--cor-principal)) */
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(0,0,0,0.55)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* Adaptação do ícone do menu para o tema dark (exemplo) */
+[data-theme="dark"] .navbar-toggler-icon {
+     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255,255,255,0.75)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* --- Fim dos novos estilos --- */
+
 
 .header-nav--socialIcons {
     flex-shrink: 0; 
-}
-
-.nav--socialIcons {
-    width: 14px;
-    height: 14px;
-    color: var(--cor-principal);
 }
 
 .nav--socialIcons {
@@ -84,21 +134,4 @@
     background-color: transparent;
     border: none;
     border-radius: 10px;
-}
-
-.nav--buttons {
-    font-size: .8rem;
-    border: none;
-    border-radius: 15px;
-    color: var(--cor-principal);
-    white-space: nowrap;
-    background: transparent;
-    transition: all 0.25s ease;
-}
-
-.nav--buttons:hover {
-    background: var(--cor-secundaria);
-    color: var(--cor-terciaria);
-    transform: translateY(-1px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }

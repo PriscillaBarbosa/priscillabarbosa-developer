@@ -1,10 +1,16 @@
+/* ==============================================
+   CSS SECTION PROCESSO
+   ============================================== */
+
 .processo {
     display: flex;
-    width: 58rem;
+    /* REMOVIDO: width: 58rem; (Quebrava a responsividade) */
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 3rem;
+    padding-top: 2rem; /* Adicionado para espaçamento */
+    padding-bottom: 2rem;
 }
 
 .processo .section-title {
@@ -19,15 +25,9 @@
     margin-bottom: 1.5rem;
 }
 
-.processo-container {
-    display: inline-grid;
-    height: 17.85938rem;
-    row-gap: 3rem;
-    column-gap: 48px;
-    grid-template-rows: repeat(1, minmax(0, 1fr));
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    color: var(--cor-principal);
-}
+/* REMOVIDO: .processo-container foi removido.
+   O layout é controlado por <div class="row">.
+*/
 
 .processo-card {
     display: flex;
@@ -36,14 +36,14 @@
     gap: 1.5rem;
     flex: 1 0 0;
     align-self: stretch;
-    grid-row: 1 / span 1;
-    grid-column: 1 / span 1;
+    /* REMOVIDO: grid-row e grid-column
+       Não estamos mais usando grid CSS aqui.
+    */
 }
 
 .processo-numeros {
     display: flex;
     width: 12.25rem;
-    /*padding-right: 8.5625rem;*/
     align-items: center;
 }
 
@@ -53,7 +53,7 @@
     font-size: 4.5rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 4.5rem; /* 100% */
+    line-height: 4.5rem; 
     opacity: 0.1;
     position:relative;
 }
@@ -64,7 +64,7 @@
     font-size: 0.75rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 1rem; /* 133.333% */
+    line-height: 1rem; 
     letter-spacing: 0.075rem;
     text-transform: uppercase;
     position:absolute;
@@ -76,7 +76,7 @@
     font-size: 1.875rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 2.25rem; /* 120% */
+    line-height: 2.25rem; 
     letter-spacing: -0.04688rem;
 }
 
@@ -86,7 +86,9 @@
     font-size: 0.875rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 1.42188rem; /* 162.5% */
+    line-height: 1.42188rem; 
     letter-spacing: 0.02188rem;
-    width: 11.625rem;
+    /* REMOVIDO: width: 11.625rem; 
+       A coluna responsiva .col-* controla a largura.
+    */
 }
