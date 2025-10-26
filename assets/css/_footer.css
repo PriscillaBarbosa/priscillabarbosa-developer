@@ -4,16 +4,13 @@
     width: 65.25rem;
     height: 24.375rem;
     padding: 4.0625rem 3.625rem 0 3.625rem;
-    flex-direction: column;
     align-items: flex-start;
     flex-shrink: 0;
 }
 
 .container-footer {
     display: flex;
-    width: 17.333rem;
     height: 10.25rem;
-    flex-direction: column;
     align-items: flex-start;
     gap: 1rem;
 }

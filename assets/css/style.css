@@ -16,6 +16,10 @@
     box-sizing: border-box;
 }
 
+html {
+  width: 100%;
+}
+
 .cormorant-garamond {
   font-family: "Cormorant Garamond", serif;
   font-optical-sizing: auto;

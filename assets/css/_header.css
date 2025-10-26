@@ -7,10 +7,12 @@
 }
 
 @media (max-width:425px) {
-    .header-content {
+    .header {
         padding: 2rem 1rem;
         flex-direction: column;
-        
+        align-items: center; 
+        justify-content: center;
+        gap: 1.5rem;
     }
 }
 

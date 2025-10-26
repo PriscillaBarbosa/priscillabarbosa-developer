@@ -1,22 +1,41 @@
 .sobre {
     align-items: flex-start;
-    gap: 5.1465rem;
     flex-shrink: 0;
-    /*padding-bottom: 2rem;*/
+    max-width: 100%;
+}
+
+@media (min-width: 1500px) {
+    .sobre {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+}
+
+.container {
+    background-size: cover;
 }
 
 .separador-sobre {
     margin-top: 4rem;
 }
 
-.sobre-vazia {
-    width: 16.666rem;
-    height: 30rem;
-    background: var(--cor-terciaria);
+.img-self {
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+    animation: fade-in-left 1.5s;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 
-.sobre-content {
-    width: 37rem;
+@keyframes fade-in-left {
+  0% {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 .sobre-destaque {
@@ -93,11 +112,13 @@
     padding: 0.5rem 1rem;
     align-items: flex-start;
     flex-shrink: 0;
-    /*margin-left: 0.75rem;*/
     margin-right: 0.75rem;
     background: var(--cor-terciaria);
     color: var(--cor-terciaria);
     border: 1px solid var(--cor-separador);
+    border-radius: 10px;
+    -webkit-box-shadow: 1px 2px 17px -9px rgba(113,113,130,0.86); 
+    box-shadow: 1px 2px 17px -9px rgba(113,113,130,0.86);
 }
 
 .card p {

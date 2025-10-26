@@ -3,6 +3,12 @@
     max-width: 100%;
 }
 
+@media (min-width: 1500px) {
+    .hero {
+        padding: 0 12rem;
+    }
+}
+
 .separador,
 .separador-sobre {
     width: 4rem;
@@ -16,41 +22,23 @@
 }
 
 .hero-content-text {
-    width: 70%;
+    width: 100%;
 }
 
-@media (min-width: 1500px) {
-    .hero-content-text {
-        width: 55%;
-        margin-left: 8.5rem;
-    }
-}
-
-.hero-destaque.hero-title {
+.hero-title {
     margin-top: 1rem;
     margin-bottom: 1.5rem;
-    padding-right: 3rem;
-    gap: 1.5rem;
-    align-items: flex-start;
     flex-shrink: 0;
-    font-size: 6rem;
+    font-size: clamp(2rem, 4.5vw, 7rem);
     font-family: "Cormorant Garamond", serif;
     color: var(--cor-principal);
     font-style: normal;
     font-weight: 400;
-    line-height: 5.7rem;
-    letter-spacing: -0.15rem;
-}
-
-div .hero-title2 {
-    font-size: 6rem;
-    font-family: "Cormorant Garamond", serif;
-    color: var(--cor-principal);
-    font-style: normal;
-    font-weight: 400;
-    line-height: 5.7rem;
-    letter-spacing: -0.15rem;
-    margin-right: 2rem;
+    line-height: 1.1;
+    letter-spacing: .08rem;
+    text-align: center;
+    animation: tracking-in-contract 7s forwards;
+   
 }
 
 .hero-chamada {
@@ -62,6 +50,7 @@ div .hero-title2 {
     line-height: 1.85rem;
     letter-spacing: 0.03rem;
     margin-bottom: 1.5rem;
+     
 }
 
 .hero-text {
@@ -117,18 +106,17 @@ div .hero-title2 {
     gap: 5.5rem;
 }
  
-.img-self {
-    width: 310px;
-    height: 400px;
+@keyframes tracking-in-contract {
+  0% {
+    letter-spacing: 1em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    letter-spacing: 0.08rem;
+    opacity: 1;
+  }
 }
-
-@media (min-width: 1500px) {
-    .img-self {
-        margin-right: 10rem;
-    }
-}
-
-
-
-
 
