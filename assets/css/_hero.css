@@ -1,68 +1,52 @@
-/* ==============================================
-   CSS DO HERO
-   ============================================== */
-
 .hero {
-    /* REMOVIDO: padding: 0 3rem; 
-       O 'container' dentro da section agora controla o padding.
-    */
-    max-width: 100%;
-}
-
-@media (min-width: 1500px) {
-    .hero .container {
-         /* AJUSTADO: O padding foi movido para a regra
-           de 1500px na seção HEADER para evitar repetição.
-        */
-    }
+  max-width: 100%;
 }
 
 .separador,
 .separador-sobre {
-    width: 4rem;
-    height: .06rem;
-    flex-shrink: 0;
-    background: var(--cor-separador);
+  width: 4rem;
+  height: .06rem;
+  flex-shrink: 0;
+  background: var(--cor-separador);
 }
 
 .separador-sobre {
-    margin-bottom: 2rem;
+  margin-bottom: 2rem;
+}
+
+.hero-destaque {
+  padding-top: 3rem;
 }
 
 .hero-content-text {
-    width: 100%;
+  width: 100%;
 }
 
 .hero-title {
-    margin-top: 1rem;
-    margin-bottom: 1.5rem;
-    flex-shrink: 0;
-    font-size: clamp(2rem, 4.5vw, 7rem);
-    font-family: "Cormorant Garamond", serif;
-    color: var(--cor-principal);
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.1;
-    letter-spacing: .08rem;
-    text-align: center;
-    animation: tracking-in-contract 7s forwards;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+  flex-shrink: 0;
+  font-size: clamp(2rem, 3vw, 5rem);
+  font-family: "Cormorant Garamond", serif;
+  color: var(--cor-principal);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: .08rem;
+  text-align: center;
+  animation: tracking-in-contract 7s forwards;
     
 }
 
 .hero-chamada {
-    color: var(--cor-principal);
-    font-family: "Montserrat", sans-serif;
-    font-size: 1.125rem;
-    font-style: normal;
-    font-weight: 300;
-    line-height: 1.85rem;
-    letter-spacing: 0.03rem;
-    margin-bottom: 1.5rem;
+  color: var(--cor-principal);
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.85rem;
+  letter-spacing: 0.03rem;
 }
-
-/* REMOVIDO: A regra global '.container { gap: 5.5rem; }'
-   foi removida pois quebrava o grid do Bootstrap.
-*/
 
 @keyframes tracking-in-contract {
   0% {
@@ -74,6 +58,47 @@
   }
   100% {
     letter-spacing: 0.08rem;
+    opacity: 1;
+  }
+}
+
+.img-self {
+  padding-top: 2rem;
+  margin-bottom: 2rem;
+  max-width: 100%;
+  height: auto;
+  width: 100%;
+  animation: fade-in-left 2.5s;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+
+@-webkit-keyframes fade-in-left {
+  0% {
+    -webkit-transform: translateX(-50px);
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-in-left {
+  0% {
+    -webkit-transform: translateX(-50px);
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  50% {
+    -webkit-transform: translateX(-25px);
+    transform: translateX(-25px);
+    opacity: .5;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
     opacity: 1;
   }
 }

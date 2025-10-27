@@ -13,13 +13,12 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Priscilla Barbosa | Front-end Developer</title>
 </head>
-<body class="p-0 m-0"> <header class="header">
+<body class="p-0 m-0"> 
+    <header class="header">
         <nav class="navbar navbar-expand-lg"> <div class="container-fluid"> <a class="navbar-brand header-nav--name" href="#">Priscilla Barbosa</a>
-                
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav mx-auto"> <li class="nav-item"><a href="#sobre" class="nav-link px-2 py-1 mx-1 nav--buttons">Sobre</a></li>
                         <li class="nav-item"><a href="#servicos" class="nav-link px-2 py-1 mx-1 nav--buttons">Serviços</a></li>
@@ -27,7 +26,6 @@
                         <li class="nav-item"><a href="#processo" class="nav-link px-2 py-1 mx-1 nav--buttons">Processo</a></li>
                         <li class="nav-item"><a href="#contato" class="nav-link px-2 py-1 mx-1 nav--buttons">Contato</a></li>
                     </ul>
-                    
                     <div class="header-nav--socialIcons d-flex align-items-center gap-1">
                         <a href="https://github.com/PriscillaBarbosa" class="px-1"><i class="fa-brands fa-github nav--socialIcons" aria-label="link para o meu github"></i></a>
                         <a href="https://www.linkedin.com/in/priscillabarbosa-developer" class="px-1"><i class="fa-brands fa-linkedin-in nav--socialIcons" aria-label="link para o meu linkedin"></i></a>
@@ -40,33 +38,32 @@
             </div>
         </nav>
     </header> 
-
     <section class="hero">
-        <div class="container"> <div class="row mx-0">
-                <div class="col-12">
-                    <div class="hero-content-text d-flex flex-column mt-3">
-                        <div class="separador mb-3"></div>
-                        <div class="hero-destaque hero-title d-flex justify-content-center mt-3"><p class="mb-0">CÓDIGO É ARTE</p></div>
-                        <p class="hero-chamada d-flex justify-content-center align-items-center text-center">Desenvolvedora front-end especializada em criar experiências digitais sofisticadas e atemporais.</p> </div>
+        <div class="container"> 
+            <div class="separador mb-3"></div>
+            <div class="row mx-0">
+                <div class="col-12 col-md-8 col-lg-9">
+                    <div class="hero-content-text d-flex flex-column align-items-center mt-5">
+                        <div class="hero-destaque hero-title d-flex justify-content-center mt-3 pt-5"><p class="mb-0">CÓDIGO É ARTE</p></div>
+                        <p class="hero-chamada d-flex justify-content-center align-items-center text-center">Desenvolvedora front-end especializada em criar experiências digitais sofisticadas e atemporais.</p> 
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 col-lg-3">
+                    <div class="hero-image d-flex justify-content-start align-items-center">
+                        <img src="./assets/img/Developer.png" alt="Minha foto" class="img-self img-fluid"> 
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-
     <section class="sobre" id="sobre">
         <div class="container">
-            <div class="row">
+            <div class="row align-items-center g-5"> 
                 <div class="col-12">
-                    <div class="separador-sobre mb-4"></div> <h2 class="section-title mb-0">Sobre</h2> </div>
-            </div>
-           
-            <div class="row align-items-center g-5"> <div class="col-12 col-md-4 col-lg-3">
-                    <div class="hero-image d-flex mt-4 justify-content-start align-items-center">
-                        <img src="./assets/img/Developer.png" alt="Minha foto" class="img-self img-fluid"> </div>
-                </div>
-
-                <div class="col-12 col-md-8 col-lg-9">
-                    <div class="sobre-infos d-flex justify-content-center"> <div class="sobre-content d-flex flex-column justify-content-between">
+                    <div class="separador-sobre my-4"></div> 
+                    <h2 class="section-title">Sobre</h2> 
+                    <div class="sobre-infos d-flex justify-content-center"> 
+                        <div class="sobre-content d-flex flex-column justify-content-between">
                             <div class="d-flex flex-column">
                                 <p class="sobre-destaque">"O design deve ser intencional, funcional e bonito."</p>
                                 <p class="sobre-texto d-flex justify-content-center align-items-center">Com mais de x anos de experiência em desenvolvimento front-end, minha 
@@ -91,9 +88,9 @@
                                         <p class="texto">Satisfação</p>
                                     </div>
                                 </div>
-                                <div class="sobre-especialidades d-flex flex-column align-items-start justify-content-center">
-                                    <p class="especialidades mb-0">Especialidades</p>
-                                    <ul class="cards-especialidades d-flex flex-wrap p-0">
+                                <div class="sobre-especialidades d-flex flex-column align-items-center justify-content-center">
+                                    <h4 class="especialidades mb-0">Especialidades</h4>
+                                    <ul class="cards-especialidades d-flex flex-wrap justify-content-center p-0">
                                         <li class="card d-flex justify-content-center align-items-center m-1">
                                             <p class="mb-0">HTML-5</p>
                                         </li>
@@ -124,6 +121,10 @@
                         </div> 
                     </div>  
                 </div>
+                
+                    
+                    
+                
             </div>
         </div>
     </section>
@@ -213,7 +214,7 @@
             <div class="row">
                 <div class="col-12">
                     <div class="d-flex flex-column justify-content-center">
-                        <div class="separador-sobre mb-5"></div>
+                        <div class="separador-sobre mb-4"></div>
                         <div class="row align-items-end">
                             <div class="col-12 col-md-6">
                                 <h2 class="section-title">Portifólio Selecionado</h2>
@@ -289,7 +290,7 @@
             <div class="row">
                 <div class="col-12">
                     <div class="d-flex flex-column justify-content-center align-items-center">
-                        <div class="separador-sobre mb-5"></div>
+                        <div class="separador-sobre mb-4"></div>
                         <div class="d-flex flex-column justify-content-center align-items-center text-center">
                             <h2 class="section-title d-flex justify-content-center align-items-center">Processo</h2>
                             <p class="texto-frase">Uma abordagem meticulosa que garante resultados excepcionais em cada etapa.</p>
@@ -339,12 +340,12 @@
             </div>
         </div>
     </section>
-
     <section class="contato" id="contato">
         <div class="container">
-            <div class="row g-5"> <div class="col-12 col-md-5">
+            <div class="row g-5"> 
+                <div class="col-12 col-md-7">
                     <div class="d-flex flex-column">
-                        <div class="separador-sobre mb-5"></div>
+                        <div class="separador-sobre mb-4"></div>
                         <div class="contato-container">
                             <div class="contato-chamada">
                                 <h2 class="contato-titulo mb-0">Vamos Conversar</h2>
@@ -362,7 +363,7 @@
                     </div>
                 </div>
                 
-                <div class="col-12 col-md-7">
+                <div class="col-12 col-md-5">
                     <div class="form">
                         <div class="form-floating mb-3">
                             <input type="text" class="form-control" id="form-name" placeholder="Nome">

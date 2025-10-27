@@ -1,13 +1,12 @@
-/* ==============================================
-   CSS SECTION SOBRE
-   ============================================== */
 
 .sobre {
     align-items: flex-start;
     flex-shrink: 0;
     max-width: 100%;
-    padding-top: 2rem; /* Adicionado um padding para espaçamento */
-    padding-bottom: 2rem;
+}
+
+.sobre .section-title {
+    padding-bottom: 1.5rem;
 }
 
 @media (min-width: 1500px) {
@@ -15,37 +14,6 @@
         padding-top: 3rem;
         padding-bottom: 3rem;
     }
-}
-
-/* REMOVIDO: A regra global '.container { background-size: cover; }'
-   foi removida pois quebrava o layout.
-*/
-
-.separador-sobre {
-    margin-top: 4rem;
-}
-
-.img-self {
-    /* AJUSTADO: 'max-width: 100%' e 'width: 100%'
-       são redundantes com a classe 'img-fluid'
-       usada no HTML, mas não causam mal.
-    */
-    max-width: 100%;
-    height: auto;
-    width: 100%;
-    animation: fade-in-left 1.5s;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-}
-
-@keyframes fade-in-left {
-  0% {
-    transform: translateX(-50px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
 }
 
 .sobre-destaque {
@@ -69,12 +37,11 @@
 
 .sobre-infoDados {
     border-top: 1px solid var(--cor-separador);
-    padding-top: 2.0625rem;
-    gap: 2rem;
+    border-bottom: 1px solid var(--cor-separador);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    gap: 1rem;
     align-self: stretch;
-    /* AJUSTADO: flex-wrap e justify-content-center
-       foram adicionados no HTML, mas é bom garantir aqui.
-    */
     flex-wrap: wrap;
     justify-content: center;
 }
@@ -84,7 +51,7 @@
     justify-content: center;
     align-items: flex-start;
     align-self: stretch;
-    text-align: center; /* Garante alinhamento no mobile */
+    text-align: center; 
 }
 
 .sobre-dados .numero {
@@ -125,8 +92,8 @@
     width:auto;
     height: 2.125rem;
     padding: 0.5rem 1rem;
-    align-items: center; /* Centraliza verticalmente */
-    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; 
+    justify-content: center; 
     flex-shrink: 0;
     margin-right: 0.75rem;
     background: var(--cor-terciaria);
@@ -145,7 +112,4 @@
     font-weight: 400;
     line-height: 1rem; 
     letter-spacing: 0.0375rem;
-    /* REMOVIDO: padding: 0.5rem 1rem; 
-       O padding já está no .card pai, removido para evitar duplicidade.
-    */
 }

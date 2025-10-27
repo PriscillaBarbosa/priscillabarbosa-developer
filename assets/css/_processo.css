@@ -1,15 +1,11 @@
-/* ==============================================
-   CSS SECTION PROCESSO
-   ============================================== */
 
 .processo {
     display: flex;
-    /* REMOVIDO: width: 58rem; (Quebrava a responsividade) */
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 3rem;
-    padding-top: 2rem; /* Adicionado para espaçamento */
+    padding-top: 2rem;
     padding-bottom: 2rem;
 }
 
@@ -25,10 +21,6 @@
     margin-bottom: 1.5rem;
 }
 
-/* REMOVIDO: .processo-container foi removido.
-   O layout é controlado por <div class="row">.
-*/
-
 .processo-card {
     display: flex;
     flex-direction: column;
@@ -36,9 +28,6 @@
     gap: 1.5rem;
     flex: 1 0 0;
     align-self: stretch;
-    /* REMOVIDO: grid-row e grid-column
-       Não estamos mais usando grid CSS aqui.
-    */
 }
 
 .processo-numeros {
@@ -54,7 +43,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: 4.5rem; 
-    opacity: 0.1;
+    opacity: 0.3;
     position:relative;
 }
 
@@ -88,7 +77,4 @@
     font-weight: 400;
     line-height: 1.42188rem; 
     letter-spacing: 0.02188rem;
-    /* REMOVIDO: width: 11.625rem; 
-       A coluna responsiva .col-* controla a largura.
-    */
 }
