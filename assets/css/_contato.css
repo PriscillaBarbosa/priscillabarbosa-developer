@@ -1,32 +1,21 @@
-/* ==============================================
-   CSS SECTION CONTATO
-   ============================================== */
 
 .contato {
-    /* REMOVIDO: 'display: inline-flex', 'height', 'justify-content', etc. */
-    /* A <section> agora é um bloco padrão e o grid cuida do layout. */
     padding-top: 2rem;
     padding-bottom: 4rem;
     flex-shrink: 0;
-    max-width: 100%; /* Adicionado para segurança */
+    max-width: 100%; 
 }
 
 @media(min-width: 1500px) {
     .contato .container {
-        /* AJUSTE: Aplicando o padding ao .container interno */
         padding-left: 12rem;
         padding-right: 12rem;
     }
 }
 
-/* REMOVIDO: .contato .content 
-   O espaçamento agora é controlado pelo 'g-5' (gutter)
-   na classe <div class="row g-5"> do seu HTML.
-*/
 
 .contato-chamada {
     display: flex;
-    /* REMOVIDO: height: 17.54688rem; (Altura fixa) */
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
@@ -40,7 +29,7 @@
     font-size: 4.5rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 4.5rem; /* 100% */
+    line-height: 4.5rem;
     letter-spacing: -0.1125rem;
 }
 
@@ -50,47 +39,44 @@
     font-size: 1rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 1.82813rem; /* 162.5% */
+    line-height: 1.82813rem; 
     margin-top: 1.5rem;
     margin-bottom: 3rem;
 }
 
 .contato-email-titulo,
 .contato-local-titulo, 
-.contato-disponibilidade-titulo {
+.contato-disponibilidade-titulo,
+.contato-redesSociais-titulo {
     color: var(--cor-principal);
     font-family: "Montserrat", sans-serif;
     font-size: 0.75rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 1rem; /* 133.333% */
+    line-height: 1rem; 
     letter-spacing: 0.075rem;
     text-transform: uppercase;
-    /* REMOVIDO: flex: 1 0 0; (Não é mais necessário) */
 }
 
 .contato-email,
 .contato-local,
-.contato-disponibilidade {
+.contato-disponibilidade, 
+.contato-redesSociais {
     color: var(--cor-principal);
     font-family: "Montserrat", sans-serif;
     font-size: 0.875rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 1.25rem; /* 142.857% */
+    line-height: 1.25rem;
 }
 
 .form {
-    /* AJUSTE: Margem mobile-first */
-    margin-top: 2rem; 
-    
-    /* REMOVIDO: width: 36rem; (O .col-md-7 cuida da largura) */
-    /* REMOVIDO: height: 26.75rem; (A altura deve ser automática) */
+    margin-top: 10rem !important; 
 }
 
-@media (min-width: 768px) { /* md breakpoint */
+@media (min-width: 768px) { 
     .form {
-        margin-top: 5rem; /* Restaura sua margem original para telas maiores */
+        margin-top: 5rem; 
     }
 }
 
@@ -100,22 +86,39 @@
     font-size: 0.75rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 1rem; /* 133.333% */
+    line-height: 1rem; 
     letter-spacing: 0.0375rem;
     text-transform: uppercase;
     display: flex;
     width: 12.29588rem;
     height: 3rem;
     padding: 1rem 2rem;
-    align-items: center; /* AJUSTE: 'center' para verticalizar */
-    justify-content: center; /* Adicionado para centralizar o texto */
+    align-items: center; 
+    justify-content: center; 
     flex-shrink: 0;
     background: var(--cor-principal);
-    border: none; /* Adicionado para garantir */
+    border: none; 
 }
 
-/* Adicionando um :hover para o botão */
 .botao-enviar:hover {
     opacity: 0.9;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.redesSociais-icones {
+    display: flex;
+    height: 2.5rem;
+    align-items: flex-start;
+    gap: 1rem;
+    flex-shrink: 0;
+    align-self: stretch;
+}
+
+.redesSociais-borda {
+    display: flex;
+    width: 2.5rem;
+    height: 2.5rem;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.10);
 }
