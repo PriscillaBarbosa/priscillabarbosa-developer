@@ -1,4 +1,6 @@
 import { inicializarDarkMode } from "./modules/darkMode.js";
+import { iniciarGraficoVendas, iniciarGraficoCustos } from "./modules/graficos.js";
+
 
 document.addEventListener('DOMContentLoaded', () => {
     inicializarDarkMode();
@@ -34,4 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }, index * delay);
         });
     }
+
+    iniciarGraficoVendas();
+    iniciarGraficoCustos();
 });

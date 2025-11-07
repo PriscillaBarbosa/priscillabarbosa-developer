@@ -113,3 +113,7 @@
     line-height: 1rem; 
     letter-spacing: 0.0375rem;
 }
+
+.sobre-especialidades {
+    border-top: 1px solid var(--cor-separador);
+}
