@@ -55,13 +55,7 @@ main {
   letter-spacing: -0.09375rem;
 } 
 
-
-
-
-
-
-
-
-
-
-
+section {
+  padding-top: 2rem;
+  /*padding-bottom: 5rem;*/
+}

@@ -29,6 +29,13 @@
     color:var(--cor-principal);
 }
 
+.header .navbar-brand.header-nav--name h1 {
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    margin: 0;
+}
+
 .navbar .nav-link.nav--buttons {
     font-size: .8rem;
     border: none;
@@ -94,8 +101,8 @@
 
 .nav--socialIcons:hover,
 .btn-darkMode:hover {
-    color: var(--cor-secundaria);
-    transform: translateY(-2px) scale(1.2);
+    color: var(--cor-separador); /* Usando a cor de destaque para consistência */
+    transform: translateY(-2px); /* Removendo o scale para um efeito mais sutil */
     border: none;
 }
 
@@ -106,4 +113,3 @@
     border: none;
     border-radius: 10px;
 } 
-

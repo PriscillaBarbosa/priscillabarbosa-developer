@@ -34,7 +34,7 @@
   line-height: 1.1;
   letter-spacing: .08rem;
   text-align: center;
-  animation: tracking-in-contract 7s forwards;
+  animation: tracking-in-contract 2.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) forwards; /* Mais rápido e suave */
     
 }
 
@@ -68,8 +68,9 @@
   max-width: 100%;
   height: auto;
   width: 100%;
-  animation: fade-in-left 2.5s;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  animation: fade-in-left 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000); /* Mais rápido */
+  /* Sombra mais sutil e profissional */
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
 }
 
 
