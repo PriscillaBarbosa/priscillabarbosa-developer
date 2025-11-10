@@ -1,3 +1,7 @@
+.servicos {
+    padding-top: 0px;
+}
+
 .servicos-texto {
     color: var(--cor-principal);
     font-family: "Montserrat", sans-serif;
@@ -7,7 +11,7 @@
     line-height: 1.82813rem; 
     flex-shrink: 0;
     margin-top: 1.5rem !important;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
 }
 
 .servicos-front {

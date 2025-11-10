@@ -5,15 +5,8 @@
     align-items: flex-start;
     gap: 3rem;
     flex-shrink: 0;
-    padding-top: 2rem; 
+    padding-top: 0; 
     padding-bottom: 2rem;
-}
-
-@media (min-width:1500px) {
-    .portifolio .container {
-        padding-left: 12rem;
-        padding-right: 12rem;
-    }
 }
 
 .ver-todos {
@@ -26,6 +19,13 @@
     line-height: 1rem; 
     letter-spacing: 0.075rem;
     text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+}
+
+.ver-todos:hover {
+    color: var(--cor-separador); 
+    transform: translateY(-2px); 
+    border: none;
 }
 
 .portifolio-principais {
@@ -84,8 +84,8 @@
     padding: .5rem 1rem;
     align-items: flex-start;
     border: 1px solid var(--cor-separador);
-    background: #FFF;
-    color: #0A0A0A;
+    background: var(--cor-terciaria);
+    color: var(--cor-principal);
     font-family: "Montserrat", sans-serif;
     font-size: 0.75rem;
     font-style: normal;
@@ -105,7 +105,7 @@
     flex-shrink: 0;
     padding-top: 1.8rem;
     text-decoration: none;
-    color: #0A0A0A;
+    color: var( --cor-principal);
     font-family: "Montserrat", sans-serif;
     font-size: 0.75rem;
     font-style: normal;
@@ -113,4 +113,11 @@
     line-height: 1rem; 
     letter-spacing: 0.075rem;
     text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+}
+
+.tec-ver:hover {
+    color: var(--cor-separador); 
+    transform: translateY(-2px); 
+    border: none;
 }

@@ -122,5 +122,7 @@
 }
 
 .sobre-especialidades {
-    border-top: 1px solid var(--cor-separador);
+    border-top: 1px solid;
+    border-top-color: rgba(212, 117, 111, 0.3);
+ 
 }

@@ -1,17 +1,17 @@
 
 .contato {
-    padding-top: 2rem;
+    padding-top: 0;
     padding-bottom: 4rem;
     flex-shrink: 0;
     max-width: 100%; 
 }
 
-@media(min-width: 1500px) {
+/*@media(min-width: 1500px) {
     .contato .container {
         padding-left: 12rem;
         padding-right: 12rem;
     }
-}
+} */
 
 
 .contato-chamada {

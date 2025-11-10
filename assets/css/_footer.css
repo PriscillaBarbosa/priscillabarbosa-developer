@@ -1,25 +1,13 @@
-/* ==============================================
-   CSS FOOTER
-   ============================================== */
 
 .footer {
-    border-top: 1px solid rgba(0, 0, 0, 0.10);
+    border-top: 1px solid;
+    border-top-color: rgba(212, 117, 111, 0.3);
     display: flex;
-    /* REMOVIDO: width: 65.25rem; */
-    /* REMOVIDO: height: 24.375rem; */
-    
-    /* AJUSTADO: O padding lateral foi removido (0)
-       pois o .container interno já cuida disso.
-    */
     padding: 4.0625rem 0;
     align-items: flex-start;
     flex-shrink: 0;
-    max-width: 100%; /* Garante que não estoure */
+    max-width: 100%; 
 }
-
-/* REMOVIDO: .container-footer foi removido.
-   O layout é controlado por <div class="row">.
-*/
 
 .footer-titulo {
     color: var(--cor-principal);
@@ -34,7 +22,7 @@
 .footer-texto {
     color: var(--cor-principal);
     font-family: "Montserrat", sans-serif;
-    max-width: 350px; /* Adicionado para controlar o fluxo do texto */
+    max-width: 350px; 
 }
 
 .navegacao-footer p {
@@ -56,6 +44,13 @@
     font-weight: 400;
     line-height: 1.25rem;
     text-decoration: none;
+}
+
+.navegacao-link:hover {
+    color: var(--cor-separador); 
+    transform: translateY(-2px); 
+    border: none;
+    transition: all 0.3s ease-in-out;
 }
 
 .newsletter-footer {
