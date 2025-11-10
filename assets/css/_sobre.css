@@ -18,10 +18,10 @@
 
 .sobre-destaque {
     color: var(--cor-principal);
-    font-family: "Cormorant Garamond", serif;
-    font-size: 1.5rem;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.125rem;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 2.4375rem;
 }
 

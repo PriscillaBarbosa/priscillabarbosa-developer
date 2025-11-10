@@ -21,6 +21,15 @@
     margin-bottom: 1.5rem;
 }
 
+.processo-frase {
+    color: var(--cor-principal);
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 2.4375rem;
+}
+
 .processo-card {
     display: flex;
     flex-direction: column;
