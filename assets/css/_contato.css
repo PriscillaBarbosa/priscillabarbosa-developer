@@ -6,14 +6,6 @@
     max-width: 100%; 
 }
 
-/*@media(min-width: 1500px) {
-    .contato .container {
-        padding-left: 12rem;
-        padding-right: 12rem;
-    }
-} */
-
-
 .contato-chamada {
     display: flex;
     flex-direction: column;
@@ -112,6 +104,8 @@
     gap: 1rem;
     flex-shrink: 0;
     align-self: stretch;
+    transition: all 0.25s ease;
+    cursor: pointer;
 }
 
 .redesSociais-borda {
@@ -120,5 +114,7 @@
     height: 2.5rem;
     justify-content: center;
     align-items: center;
-    border: 1px solid rgba(0, 0, 0, 0.10);
+    border: 1px solid;
+    border-color: var(--cor-separador);
+    border-radius: 10px;
 }

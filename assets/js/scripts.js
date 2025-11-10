@@ -39,4 +39,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     iniciarGraficoVendas();
     iniciarGraficoCustos();
+    AOS.init({
+        duration: 1000
+    });
 });
+
+
