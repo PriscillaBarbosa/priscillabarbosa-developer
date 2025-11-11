@@ -91,3 +91,7 @@ section {
     opacity: 1;
   }
 }
+
+.form-floating > label {
+  color: var(--cor-principal);
+}
