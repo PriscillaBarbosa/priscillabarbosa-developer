@@ -116,3 +116,7 @@
     border-color: var(--cor-separador);
     border-radius: 10px;
 }
+
+textarea .form-control {
+    height: 150px;
+}
