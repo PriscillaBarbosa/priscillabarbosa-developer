@@ -94,4 +94,9 @@ section {
 
 .form-floating > label {
   color: var(--cor-principal);
+  opacity: .5;
+}
+
+.form-floating .form-control {
+  color: var(--cor-principal);
 }

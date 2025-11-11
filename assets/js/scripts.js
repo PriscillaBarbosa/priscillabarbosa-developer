@@ -3,9 +3,10 @@ import { inicializarFormularioContato } from "./modules/inicializarFormulario.js
 
 document.addEventListener('DOMContentLoaded', () => {
     inicializarDarkMode();
+    inicializarFormularioContato();
     console.log('DOM carregado, Dark Mode inicializado.');
 
-    const titulo = document.querySelector('.hero-titulo');
+    /*const titulo = document.querySelector('.hero-titulo');
     
     if (titulo) {
         const textoOriginal = titulo.textContent;
@@ -34,12 +35,30 @@ document.addEventListener('DOMContentLoaded', () => {
                 span.classList.add('visible');
             }, index * delay);
         });
-    }
+    } */
 
+    
+   
     AOS.init({
         duration: 1000
     });
-    inicializarFormularioContato();
-});
+    
+    const app = document.getElementById('titulo-datilografado');
+        if (app) { 
+            const typewriter = new Typewriter(app, {
+                loop: true,
+                delay: 75,
+            });
 
-
+            typewriter
+                .typeString('CÓDIGO & DESIGN')
+                .pauseFor(1000)
+                .deleteAll()
+                .typeString('Desenvolvedora Full-stack com foco em Front-end.')
+                .pauseFor(1000)
+                .deleteAll()
+                .typeString('Apaixonada por UI/UX.')
+                .pauseFor(1000)
+                .start();
+        }
+})
