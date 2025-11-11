@@ -1,6 +1,5 @@
 import { inicializarDarkMode } from "./modules/darkMode.js";
-import { iniciarGraficoVendas, iniciarGraficoCustos } from "./modules/graficos.js";
-
+import { inicializarFormularioContato } from "./modules/inicializarFormulario.js";
 
 document.addEventListener('DOMContentLoaded', () => {
     inicializarDarkMode();
@@ -37,11 +36,10 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    iniciarGraficoVendas();
-    iniciarGraficoCustos();
     AOS.init({
         duration: 1000
     });
+    inicializarFormularioContato();
 });
 
 
