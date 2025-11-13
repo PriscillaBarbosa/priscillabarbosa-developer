@@ -120,3 +120,8 @@
 textarea .form-control {
     height: 150px;
 }
+
+.form-floating > .form-control:focus label {
+    background-color: red;
+    color: green;
+}

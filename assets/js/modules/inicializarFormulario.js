@@ -10,7 +10,6 @@ export async function inicializarFormularioContato() {
 
         const button = document.getElementById("btn-enviar-contato");
         const statusDiv = document.getElementById("form-status");
-        const spinner = document.getElementById("form-spinner");
 
         form.addEventListener("submit", async (event) => {
             event.preventDefault();
@@ -28,7 +27,7 @@ export async function inicializarFormularioContato() {
             statusDiv.className = "alert alert-info";
 
             try {
-                const response = await fetch("https://backend-portifolio-1.onrender.com/api/send-email", {
+                const response = await fetch("https://backend-portifolio-65uf.onrender.com/api/send-email", {
                     method: "POST",
                     headers: {
                         "Content-Type": "application/json",
