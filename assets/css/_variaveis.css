@@ -4,12 +4,12 @@
     --cor-principal: #171717;
     --cor-secundaria: #717182;
     --cor-separador: #D4756F;
-    --cor-terciaria: #F8F8F8;
+    --cor-terciaria: #F2F1ED;
     --cor-bg: linear-gradient(180deg, #ffffff, #d3bcac, #ffffff);
 }
 
 [data-theme="dark"] {
-    --cor-principal:  #F8F8F8;
+    --cor-principal:  #F2F1ED;
     --cor-terciaria: #171717;
     --cor-separador: #D4756F;
     --cor-secundaria: #717182;

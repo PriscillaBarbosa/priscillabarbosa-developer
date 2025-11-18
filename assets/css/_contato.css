@@ -70,7 +70,8 @@
     }
 }
 
-.botao-enviar {
+.botao-enviar,
+.botao-ver {
     color: var(--cor-terciaria);
     font-family: "Montserrat", sans-serif;
     font-size: 0.75rem;
@@ -90,7 +91,8 @@
     border: none; 
 }
 
-.botao-enviar:hover {
+.botao-enviar:hover,
+.botao-ver:hover {
     opacity: 0.9;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
@@ -106,7 +108,14 @@
     cursor: pointer;
 }
 
-.redesSociais-borda {
+.redesSociais-icones .redesSociais-borda:hover i {
+    color: var(--cor-separador); 
+    transform: translateY(-2px); 
+    opacity: .8;
+    transition:all 0.3s ease-in-out;
+}
+
+/*.redesSociais-borda {
     display: flex;
     width: 2.5rem;
     height: 2.5rem;
@@ -115,13 +124,27 @@
     border: 1px solid;
     border-color: var(--cor-separador);
     border-radius: 10px;
-}
+}*/
 
 textarea .form-control {
     height: 150px;
 }
 
-.form-floating > .form-control:focus label {
-    background-color: red;
-    color: green;
+.form-floating .label-mensagem {
+    color: var(--cor-separador);
+}
+
+.redesSociais-icones div i {
+    color: var(--cor-principal);
+}
+
+.form-control {
+    border: 1px solid var(--cor-separador);
+    /*border-radius: 10px*/
+}
+
+.form-control:focus {
+    border-color: var(--cor-separador);
+    outline: 0;
+    box-shadow: 0 0 0 .25rem rgba(212, 117, 111, .25);
 }

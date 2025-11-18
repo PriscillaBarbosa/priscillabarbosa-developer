@@ -9,6 +9,11 @@
     padding-bottom: 1.5rem;
 }
 
+.section-title {
+    font-size: 3.3rem !important;
+    text-transform: uppercase;
+}
+
 @media (min-width: 1500px) {
     .sobre {
         padding-top: 3rem;
@@ -96,10 +101,9 @@
     justify-content: center; 
     flex-shrink: 0;
     margin-right: 0.75rem;
-    background: var(--cor-terciaria);
-    color: var(--cor-terciaria);
-    border: 1px solid var(--cor-separador);
-    border-radius: 10px;
+    background: var(--cor-principal);
+    border: 1px solid var(--cor-principal);
+    border-radius: 40px;
     -webkit-box-shadow: 1px 2px 17px -9px rgba(113,113,130,0.86); 
     box-shadow: 1px 2px 17px -9px rgba(113, 113, 130, 0.86);
     transition: all 0.3s ease; /* Adiciona transição para o hover */
@@ -108,11 +112,12 @@
 .card:hover {
     transform: translateY(-3px);
     box-shadow: 0 4px 20px -5px rgba(113, 113, 130, 0.9);
-    border-color: var(--cor-separador);
+    background: var(--cor-separador);
+    border: none;
 }
 
 .card p {
-    color: var(--cor-principal);
+    color: var(--cor-terciaria);
     font-family:  "Montserrat", sans-serif;
     font-size: 0.75rem;
     font-style: normal;
@@ -123,6 +128,6 @@
 
 .sobre-especialidades {
     border-top: 1px solid;
-    border-top-color: rgba(212, 117, 111, 0.3);
+    border-top-color: var(--cor-separador);
  
 }

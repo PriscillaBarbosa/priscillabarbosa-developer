@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 .typeString('Desenvolvedora Full-stack com foco em Front-end.')
                 .pauseFor(1000)
                 .deleteAll()
-                .typeString('Apaixonada por UI/UX.')
+                .typeString('Apaixonada por User Experience e Design.')
                 .pauseFor(1000)
                 .start();
         }

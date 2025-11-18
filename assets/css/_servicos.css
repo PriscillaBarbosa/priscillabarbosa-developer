@@ -106,3 +106,7 @@ li::marker {
 ul li p {
     font-size: .9rem;
 }
+
+.solucoes-lista li p {
+    color: var(--cor-secundaria);
+}

@@ -22,7 +22,9 @@
 .footer-texto {
     color: var(--cor-principal);
     font-family: "Montserrat", sans-serif;
+    font-size: .8rem;
     max-width: 350px; 
+    opacity: .8;
 }
 
 .navegacao-footer p {
@@ -72,4 +74,20 @@
     font-weight: 400;
     line-height: 1.21875rem; 
     letter-spacing: 0.01875rem;
+}
+
+.footer-termos {
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.21875rem; 
+    letter-spacing: 0.01875rem;
+}
+
+.footer-termos a,
+.footer-termos p {
+    text-decoration: none;
+    color: var(--cor-principal);
+    opacity: .8;
 }

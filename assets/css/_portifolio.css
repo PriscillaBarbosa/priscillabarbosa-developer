@@ -92,7 +92,7 @@
     font-weight: 400;
     line-height: 1rem;
     letter-spacing: 0.0375rem;
-    border-radius: .5rem;
+    border-radius: 2rem;
     margin-bottom: 0.5rem; 
 }
 
@@ -105,7 +105,7 @@
     flex-shrink: 0;
     padding-top: 1.8rem;
     text-decoration: none;
-    color: var( --cor-principal);
+    color: var( --cor-terciaria);
     font-family: "Montserrat", sans-serif;
     font-size: 0.75rem;
     font-style: normal;
