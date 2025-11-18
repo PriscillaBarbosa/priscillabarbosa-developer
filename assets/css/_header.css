@@ -8,7 +8,6 @@
 
 .header .navbar-brand.header-nav--name {
     font-style: normal;
-    font-weight: 500;
     font-size: 1.25rem;
     line-height: 1.75rem;
     letter-spacing: 0.0625rem;
@@ -37,7 +36,7 @@
 .subtitle {
     font-size: 0.8rem;
     font-family: "Montserrat", sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     color: var(--cor-principal);
 }
 
@@ -49,7 +48,7 @@
     font-family: "Montserrat", sans-serif;
     color: var(--cor-principal);
     font-style: normal;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 1.85rem;
     letter-spacing: 0.03rem;
 }
@@ -138,5 +137,4 @@
 .nav--buttons:hover::after {
   transform: scaleX(1); 
 }
-
 

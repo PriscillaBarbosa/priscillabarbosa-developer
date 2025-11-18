@@ -24,9 +24,9 @@
 .processo-frase {
     color: var(--cor-principal);
     font-family: "Montserrat", sans-serif;
-    font-size: 1.125rem;
+    font-size: .95rem;
     font-style: normal;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 2.4375rem;
 }
 
@@ -81,7 +81,7 @@
 .processo-texto {
     color: var(--cor-principal);
     font-family: Montserrat;
-    font-size: 0.875rem;
+    font-size: 0.8rem;
     font-style: normal;
     font-weight: 400;
     line-height: 1.42188rem; 
