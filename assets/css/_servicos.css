@@ -35,8 +35,8 @@
     box-shadow: 1px 2px 17px -9px rgba(113,113,130,0.86);*/
 }
 
-.icon svg {
-    stroke: var(--cor-separador);
+.icon-servicos {
+    color: var(--cor-separador);
 }
 
 .icon-icon {
