@@ -115,17 +115,6 @@
     transition:all 0.3s ease-in-out;
 }
 
-/*.redesSociais-borda {
-    display: flex;
-    width: 2.5rem;
-    height: 2.5rem;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid;
-    border-color: var(--cor-separador);
-    border-radius: 10px;
-}*/
-
 textarea .form-control {
     height: 150px;
 }
@@ -139,8 +128,9 @@ textarea .form-control {
 }
 
 .form-control {
-    border: 1px solid var(--cor-separador);
-    /*border-radius: 10px*/
+    border: 1px solid var(--cor-principal);
+    border-radius: 0;
+    opacity: .3;
 }
 
 .form-control:focus {
