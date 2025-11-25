@@ -32,19 +32,6 @@ O projeto foi desenvolvido utilizando uma arquitetura moderna e desacoplada:
 * **Arquitetura MVC:** Organização em *Models*, *Controllers* e *Services* (conforme estrutura do repositório).
 ---
 
-##  Estrutura
-
-priscillabarbosa.developer/
-* **│── assets/       # Arquivos estáticos (CSS, JS, imagens)
-* **│── backend/      
-* **    ├── controllers/     # Lógica de controle das requisições
-* **    ├── routes/          # Definição das rotas da API
-* **    ├── services/        # Regras de negócio
- * **   └── server.js        # Ponto de entrada do servidor
-* **│── index.html    # Página    
-
----
-
 ## ✨ Funcionalidades
 
 ✅ Design Responsivo: Adaptável para mobile, tablet e desktop.
@@ -65,3 +52,16 @@ priscillabarbosa.developer/
 💼 LinkedIn -> https://www.linkedin.com/in/priscillabarbosa-developer/
 
 🐙 GitHub -> [github.com/PriscillaBarbosa](https://github.com/PriscillaBarbosa)
+
+##  Estrutura
+```bash
+priscillabarbosa.developer/
+* **│── assets/       # Arquivos estáticos (CSS, JS, imagens)
+* **│── backend/      
+* **    ├── controllers/     # Lógica de controle das requisições
+* **    ├── routes/          # Definição das rotas da API
+* **    ├── services/        # Regras de negócio
+ * **   └── server.js        # Ponto de entrada do servidor
+* **│── index.html    # Página    
+
+---
