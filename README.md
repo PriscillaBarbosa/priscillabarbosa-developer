@@ -11,8 +11,9 @@ Foi desenvolvido utilizando **HTML, CSS, JavaScript, Express e Node.js**.
 👉 [https://priscillabarbosa-developer.vercel.app/]
 ![Demo da página](assets/img/demo1.gif)
 
-👉 **Frontend (Deploy):** [Acessar Portfólio Online](https://priscillabarbosa-developer.vercel.app/)
-👉 **Repositório Frontend:** [github.com/PriscillaBarbosa/priscillabarbosa-developer](https://github.com/PriscillaBarbosa/priscillabarbosa-developer)
+* **Frontend (Deploy):** [Acessar Portfólio Online](https://priscillabarbosa-developer.vercel.app/)
+* **Repositório Frontend:** [github.com/PriscillaBarbosa/priscillabarbosa-developer](https://github.com/PriscillaBarbosa/priscillabarbosa-developer)
+
 * **Repositório Backend:** [github.com/PriscillaBarbosa/backend-portifolio](https://github.com/PriscillaBarbosa/backend-portifolio)
 ---
 
@@ -34,13 +35,13 @@ O projeto foi desenvolvido utilizando uma arquitetura moderna e desacoplada:
 ##  Estrutura
 
 priscillabarbosa.developer/
-│── assets/       # Arquivos estáticos (CSS, JS, imagens)
-│── backend/      
-    ├── controllers/     # Lógica de controle das requisições
-    ├── routes/          # Definição das rotas da API
-    ├── services/        # Regras de negócio
-    └── server.js        # Ponto de entrada do servidor
-│── index.html    # Página    
+* **│── assets/       # Arquivos estáticos (CSS, JS, imagens)
+* **│── backend/      
+* **    ├── controllers/     # Lógica de controle das requisições
+* **    ├── routes/          # Definição das rotas da API
+* **    ├── services/        # Regras de negócio
+ * **   └── server.js        # Ponto de entrada do servidor
+* **│── index.html    # Página    
 
 ---
 
