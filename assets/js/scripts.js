@@ -21,10 +21,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 .typeString('CÓDIGO & DESIGN')
                 .pauseFor(1000)
                 .deleteAll()
-                .typeString('Desenvolvedora Full-stack com foco em Front-end.')
+                .typeString('Desenvolvimento Web')
                 .pauseFor(1000)
                 .deleteAll()
-                .typeString('Apaixonada por User Experience e Design.')
+                .typeString('User Interface')
                 .pauseFor(1000)
                 .start();
         }
